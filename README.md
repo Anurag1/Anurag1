@@ -1,4 +1,5 @@
-## Hi there 👋
+
+[Diagrama Star Schema](https://github.com/IOVASCON/Vendas_Com_Star_Schema/blob/main/Professor_Star_Schema-V3.PNG)## Hi there 👋
 
 <!--
 **Anurag1/Anurag1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
