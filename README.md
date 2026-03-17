@@ -1,4 +1,4 @@
-@b8horpet
+@b8horpet iovascon@gmail.com
 [Diagrama Star Schema](https://github.com/IOVASCON/Vendas_Com_Star_Schema/blob/main/Professor_Star_Schema-V3.PNG)## Hi there 👋
 
 <!--
