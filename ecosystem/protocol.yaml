@@ -1,0 +1,54 @@
+protocol_version: "1"
+
+manifest:
+  required:
+    - repo
+    - role
+    - version
+    - capabilities
+    - inputs
+    - outputs
+    - publishes
+    - consumes
+    - dependencies
+
+roles:
+  - orchestration
+  - reasoning
+  - memory
+  - knowledge
+  - discovery
+  - perception
+  - multimodal
+  - learning
+  - simulation
+  - execution
+  - benchmark
+  - application
+  - infrastructure
+  - data
+  - research
+  - archive
+
+events:
+  task.requested:
+    fields: [id, source_repo, target_repo, payload, timestamp]
+  task.assigned:
+    fields: [id, source_repo, target_repo, payload, timestamp]
+  task.result:
+    fields: [id, source_repo, target_repo, payload, timestamp]
+  reasoning.completed:
+    fields: [id, source_repo, target_repo, payload, timestamp]
+  knowledge.updated:
+    fields: [id, source_repo, target_repo, payload, timestamp]
+  benchmark.completed:
+    fields: [id, source_repo, target_repo, payload, timestamp]
+  feedback.created:
+    fields: [id, source_repo, target_repo, payload, timestamp]
+
+rules:
+  - Repositories communicate through contracts rather than circular imports.
+  - Shared knowledge must carry provenance.
+  - Secrets and credentials are never published as ecosystem events.
+  - A repository may reject tasks outside its declared capabilities.
+  - Benchmark results must identify the implementation version and evaluation conditions.
