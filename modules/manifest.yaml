@@ -1,0 +1,161 @@
+version: 1
+name: anurag1-unified
+strategy: integration-monorepo
+
+modules:
+  - id: geometric-engine
+    source: Anurag1/Geometric-Engine-Intelligence-
+    path: research/discovery/geometric-engine
+    role: graph-discovery
+  - id: meta-attention
+    source: Anurag1/Generalised-Meta-Attention-Architecture-4926c17c
+    path: research/reasoning/meta-attention
+    role: reasoning-confidence-self-critique
+  - id: suphai
+    source: Anurag1/SUPHAI_MODEL
+    path: research/reasoning/suphai
+    role: adaptive-inference
+  - id: prometheus-agi
+    source: Anurag1/Prometheus-AGI
+    path: research/reasoning/prometheus
+    role: orchestration
+  - id: aurora
+    source: Anurag1/Aurora-The-Conversational-Knowledge-Lens
+    path: research/knowledge/aurora
+    role: knowledge-exploration
+  - id: geosemalign
+    source: Anurag1/GeoSemAlign-Visual-Geometry-Symbol-Meaning-Pipeline
+    path: research/representation/geosemalign
+    role: multimodal-semantic-alignment
+  - id: symbiote
+    source: Anurag1/symbiote-agent-live
+    path: agents/symbiote
+    role: agent-execution
+  - id: nexus-executor
+    source: Anurag1/nexus-executor
+    path: agents/nexus
+    role: execution
+  - id: collective-reasoning
+    source: Anurag1/Synthetic-Reason-Collective-Intelligence-System
+    path: agents/collective-reasoning
+    role: collective-reasoning
+  - id: wave-graph-grammar
+    source: Anurag1/wave-graph-grammar-core
+    path: research/semantics/wave-grammar
+    role: graph-grammar
+  - id: truthai
+    source: Anurag1/truthai-universal
+    path: research/truth
+    role: evidence-validation
+  - id: symbl-data
+    source: Anurag1/symbl-data
+    path: research/data/symbl
+    role: semantic-data
+  - id: multimodal-reasoning
+    source: Anurag1/Awesome-Multimodal-Reasoning
+    path: research/multimodal
+    role: references
+  - id: memori
+    source: Anurag1/Memori
+    path: research/memory
+    role: memory-reference
+  - id: evals
+    source: Anurag1/evals
+    path: research/evaluation
+    role: evaluation
+  - id: sems
+    source: Anurag1/sems-phase0-monolith
+    path: systems/sems
+    role: system-prototype
+  - id: living-system
+    source: Anurag1/ai-living-system-phase1
+    path: systems/ai-living-system
+    role: system-architecture
+  - id: sentient-cloud
+    source: Anurag1/hio_sentient_cloud
+    path: systems/sentient-cloud
+    role: cloud-experiment
+  - id: codex2099
+    source: Anurag1/codex2099
+    path: systems/codex
+    role: research-material
+  - id: simaf
+    source: Anurag1/SIMAF
+    path: applications/simaf
+    role: application-prototype
+  - id: quantum-future
+    source: Anurag1/A-Quantum-Inspired-Call-to-Collective-Action-Unifying-Domains-for-Humanity-s-Future
+    path: applications/quantum-future
+    role: cross-domain-research
+  - id: pbd-rs
+    source: Anurag1/PBDRS
+    path: applications/pbd
+    role: application-prototype
+  - id: master-selector
+    source: Anurag1/MasterSelector
+    path: tools/master-selector
+    role: routing-selection
+  - id: chooser
+    source: Anurag1/chooser
+    path: tools/chooser
+    role: selection
+  - id: list-files
+    source: Anurag1/list-files
+    path: tools/list-files
+    role: file-utility
+  - id: files-gcs
+    source: Anurag1/files_gcs
+    path: tools/files-gcs
+    role: storage-utility
+  - id: guardrails
+    source: Anurag1/openai-guardrails-python01
+    path: security/guardrails
+    role: safety
+  - id: payment-mcp
+    source: Anurag1/payment-mcp-server
+    path: platform/payment
+    role: mcp-integration
+  - id: kodekit
+    source: Anurag1/kodekit
+    path: platform/kodekit/core
+    role: platform-core
+  - id: kodekit-ui
+    source: Anurag1/kodekit-ui
+    path: platform/kodekit/ui
+    role: platform-ui
+  - id: kodekit-platform
+    source: Anurag1/kodekit-platform
+    path: platform/kodekit/platform
+    role: platform
+
+excluded_upstream_mirrors:
+  - Anurag1/faiss
+  - Anurag1/llvm-project
+  - Anurag1/opensearch
+  - Anurag1/opensearch-dashboards
+  - Anurag1/bitcoin
+  - Anurag1/brave-browser
+  - Anurag1/nginx
+  - Anurag1/nginx-tests
+  - Anurag1/Win32-OpenSSH
+  - Anurag1/PythonRobotics
+  - Anurag1/mpv
+  - Anurag1/inferno-os
+  - Anurag1/inferno-1e0
+  - Anurag1/inferno-1e1
+  - Anurag1/inferno-2e
+  - Anurag1/inferno-3e
+  - Anurag1/tmux
+  - Anurag1/notepad-plus-plus
+  - Anurag1/youtube-dl
+  - Anurag1/frappe
+  - Anurag1/coreutils
+  - Anurag1/findutils
+  - Anurag1/kagglehub
+  - Anurag1/adk-python
+  - Anurag1/eth2.0-specs
+  - Anurag1/kubernetes-ingress
+  - Anurag1/open-source-search-engine
+  - Anurag1/creativecommons.org
+  - Anurag1/open4us.org
+  - Anurag1/copilot-docs
