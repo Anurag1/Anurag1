@@ -1,0 +1,22 @@
+{
+  "benchmark": "DiscoveryOS Evidence Benchmark v0",
+  "commit": "c8481b93fbec7608c46e16e000e37ee4e3e7ac2e",
+  "artifact_coverage": {
+    "linear_llm_workflow": 0.3,
+    "discoveryos": 1.0
+  },
+  "end_to_end_superiority": "not_proven",
+  "dimensions": [
+    "observation",
+    "graph_memory",
+    "meta_reasoning",
+    "question_contradiction",
+    "hypothesis",
+    "experiment_evaluation",
+    "knowledge_update",
+    "agent_execution",
+    "multimodal_geometry",
+    "closed_feedback_discovery"
+  ],
+  "notes": "Coverage is evidence-backed at the architecture/artifact level. Closed-loop superiority requires a controlled head-to-head runtime benchmark."
+}
