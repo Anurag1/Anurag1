@@ -1,0 +1,7 @@
+[
+  {"id":"T1","domain":"research","input":"A system has 100 observations. 60 are supported by source A, 50 by source B, and 20 by both. How many observations are supported by at least one source?","answer":90,"skills":["evidence","verification"]},
+  {"id":"T2","domain":"contradiction","input":"Claim A: every tested sample passed. Claim B: sample 17 failed. Are the claims jointly consistent?","answer":"contradiction","skills":["contradiction_detection"]},
+  {"id":"T3","domain":"hypothesis","input":"A service latency increases only when concurrent requests exceed 80. Give the most directly testable hypothesis.","answer":"latency rises when concurrency exceeds 80","skills":["hypothesis"]},
+  {"id":"T4","domain":"engineering","input":"A deployment succeeds locally but fails in CI because a required environment variable is absent. What is the first verification step?","answer":"inspect CI environment/secrets for the required variable","skills":["debugging","verification"]},
+  {"id":"T5","domain":"discovery","input":"Dataset X has 10, 20, 40, 80. Dataset Y has 3, 6, 12, 24. What common relationship is directly supported?","answer":"each sequence doubles at every step","skills":["pattern_discovery"]}
+]
