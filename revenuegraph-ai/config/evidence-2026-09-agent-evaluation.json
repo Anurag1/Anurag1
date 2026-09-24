@@ -1,0 +1,17 @@
+[
+  {
+    "source": "https://huggingface.co/blog/ibm-research/open-agent-leaderboard",
+    "claim": "The Open Agent Leaderboard evaluates full agent systems and reports quality and cost.",
+    "confidence": 0.95
+  },
+  {
+    "source": "https://arxiv.org/abs/2606.12736",
+    "claim": "SciAgentArena reports that current agents remain uneven on genuinely novel insights and self-directed exploration in scientific research tasks.",
+    "confidence": 0.93
+  },
+  {
+    "source": "https://arxiv.org/abs/2607.02577",
+    "claim": "A 2026 audit reports evaluator misalignment and run-to-run variance in tool-calling benchmarks, motivating auditable evaluation.",
+    "confidence": 0.9
+  }
+]
