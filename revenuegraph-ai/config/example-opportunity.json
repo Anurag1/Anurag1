@@ -1,0 +1,10 @@
+{
+  "title": "AI agent evaluation",
+  "audience": "AI developers",
+  "problem": "Difficulty evaluating agent behavior across diverse tasks",
+  "evidence": [],
+  "proposed_offer": "Open benchmark plus optional implementation support",
+  "channels": ["x", "linkedin", "pinterest"],
+  "hypothesis": "A reproducible benchmark creates qualified technical interest",
+  "status": "draft"
+}
