@@ -1,0 +1,15 @@
+[
+  {"problem_id":"P01","domain_pair":"AI + medicine","task":"Identify a potentially useful relationship between uncertainty calibration in AI systems and a clinical decision-support setting; state evidence needed before testing."},
+  {"problem_id":"P02","domain_pair":"AI + economics","task":"Propose a falsifiable relationship between agent tool-use cost and economic decision quality."},
+  {"problem_id":"P03","domain_pair":"AI + education","task":"Find a testable relationship between retrieval structure and learning outcomes."},
+  {"problem_id":"P04","domain_pair":"AI + networks","task":"Identify a non-obvious graph property that could affect multi-agent coordination and specify a verification test."},
+  {"problem_id":"P05","domain_pair":"AI + materials","task":"Propose a testable relationship between representation geometry and materials-property prediction."},
+  {"problem_id":"P06","domain_pair":"AI + climate","task":"Identify a relationship between uncertainty propagation and climate-risk decision support that can be empirically tested."},
+  {"problem_id":"P07","domain_pair":"AI + cybersecurity","task":"Propose a falsifiable relationship between tool-use traces and detection of anomalous agent behavior."},
+  {"problem_id":"P08","domain_pair":"AI + robotics","task":"Identify a relationship between world-model consistency and recovery from unexpected observations."},
+  {"problem_id":"P09","domain_pair":"AI + language","task":"Find a testable relationship between compositional structure and cross-domain generalization."},
+  {"problem_id":"P10","domain_pair":"AI + science","task":"Propose a falsifiable mechanism by which contradiction detection could improve scientific hypothesis generation."},
+  {"problem_id":"P11","domain_pair":"AI + software","task":"Identify a relationship between dependency-graph structure and defect discovery."},
+  {"problem_id":"P12","domain_pair":"AI + operations","task":"Propose a measurable relationship between planning depth and robustness under changing constraints."},
+  {"problem_id":"P13","domain_pair":"AI + social systems","task":"Identify a relationship between information-network structure and propagation of unsupported claims; specify a safe evaluation method."}
+]
