@@ -1,0 +1,16 @@
+# Temporary files to be deleted
+1.txt
+2.txt
+Alexandria.zip
+README0.md
+index.html
+netlify.toml
+MONOREPO_STATUS.md
+UNIFIED_ARCHITECTURE.md
+HONet-Lifelong-Learning/
+affiliate-lab/
+revenuegraph-ai/
+benchmarks/
+ecosystem/
+modules/
+tools/
