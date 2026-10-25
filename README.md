@@ -1,95 +1,53 @@
-# Anurag1
+# Anurag1 — AI/ML Engineering & Research
 
-AI researcher exploring reasoning, knowledge systems, agents, and scientific discovery.
+I build and evaluate experimental systems for **structured reasoning, knowledge-graph discovery, verification, and AI agents**. My portfolio focuses on turning architectural ideas into inspectable implementations and testable research questions.
 
-I build systems that aim to move beyond pattern matching toward structured understanding, falsifiable hypotheses, and verification-driven research.
+> **Research question:** Can explicit structure—claims, relationships, assumptions, contradictions, and evidence—help AI systems generate better hypotheses and verify them more reliably?
 
-<p align="center">
-  <a href="https://github.com/Anurag1">
-    <img src="https://github-readme-stats.vercel.app/api?username=Anurag1&show_icons=true&theme=github_dark&hide_border=true" alt="GitHub stats" />
-  </a>
-</p>
+## Featured work
 
-<p align="center">
-  <a href="https://github.com/Anurag1?tab=repositories">
-    <img src="https://img.shields.io/badge/Research-AI%20Reasoning%20%26%20Discovery-5A67D8?style=for-the-badge" alt="Research focus" />
-    <img src="https://img.shields.io/badge/Focus-Knowledge%20Systems%2C%20Agents%2C%20Geometry-2F855A?style=for-the-badge" alt="Knowledge focus" />
-  </a>
-</p>
+| Project | Focus | Current evidence / status |
+|---|---|---|
+| [Geometric Engine Intelligence](https://github.com/Anurag1/Geometric-Engine-Intelligence-) | Knowledge-graph representation, unexplored-edge ranking, contradiction-driven discovery | Research prototype with a documented data model, scoring concepts, and evaluation-harness foundation. Claims of knowledge or scientific novelty require independent evaluation. |
+| [HONet](https://github.com/GALAXYUNIONEORGANIZATION/HONET-) | Continual-learning architecture and an executable observation-to-hypothesis discovery loop | Repository documents demos and unit-test commands. Performance claims should be interpreted in light of independently reproduced benchmark results. |
+| [Aurora / VINCI AI](https://github.com/Anurag1/Aurora-The-Conversational-Knowledge-Lens) | Surfacing assumptions, missing context, contradictions, and links across conversations | README describes a deterministic Python prototype, regression tests, CI, and a runnable demo. |
+| [Meta-Attention Reasoning Toolkit](https://github.com/Anurag1/Generalised-Meta-Attention-Architecture-4926c17c) | Experimental meta-attention, confidence estimation, and self-critique | Developer-preview proposal; its README still describes planned SDK components. |
+| [SUPHAI Model](https://github.com/Anurag1/SUPHAI_MODEL) | Multi-agent coordination and adaptive AI system architecture | Architecture-oriented project; benchmark against single-agent and simpler orchestration baselines is a key next step. |
+| [Synthetic Reason — Collective Intelligence](https://github.com/Anurag1/Synthetic-Reason-Collective-Intelligence-System) | Symbolic memory, agent collaboration, and consensus | Repository documents a FastAPI-based prototype and optional external service integrations; deployment and reliability need separate verification. |
 
-## Research question
-
-> Can AI move from generating plausible answers toward discovering missing relationships, producing falsifiable hypotheses, and learning from verification?
-
-## Research map
+## Research workflow
 
 ```text
-Perception
-    ↓
-Structured representation
-    ↓
-Knowledge graph / geometry
-    ↓
-Assumptions and contradictions
-    ↓
-Unexplored relationships
-    ↓
-Hypotheses
-    ↓
-Falsifiable tests
-    ↓
-Validation and replication
+Observe → Represent claims and evidence → Map relationships
+       → Detect assumptions and contradictions
+       → Generate hypotheses → Design discriminating tests
+       → Evaluate against baselines → Replicate or revise
 ```
 
-## Featured research repositories
+## Technical interests
 
-| Area | Repository | Purpose |
-| --- | --- | --- |
-| Discovery | [Geometric-Engine-Intelligence-](https://github.com/Anurag1/Geometric-Engine-Intelligence-) | Knowledge graph and unexplored-edge discovery prototype |
-| Discovery | [HONET-](https://github.com/Anurag1/HONET-) | Contradiction and assumption-driven research framework |
-| Reasoning | [Generalised-Meta-Attention-Architecture](https://github.com/Anurag1/Generalised-Meta-Attention-Architecture) | Experimental reasoning and attention architecture |
-| Adaptive reasoning | [SUPHAI_MODEL](https://github.com/Anurag1/SUPHAI_MODEL) | Adaptive inference and uncertainty experiments |
-| Geometry | [GeoSemAlign-Visual-Geometry-Symbol-Meaning-Pipeline](https://github.com/Anurag1/GeoSemAlign-Visual-Geometry-Symbol-Meaning-Pipeline) | Geometry, symbols, and semantic alignment |
-| Agents | [symbiote-agent-live](https://github.com/Anurag1/symbiote-agent-live) | Agent execution experiments |
-| Collective reasoning | [Synthetic-Reason-Collective-Intelligence-System](https://github.com/Anurag1/Synthetic-Reason-Collective-Intelligence-System) | Multi-system reasoning experiments |
-| Knowledge | [Aurora-The-Conversational-Knowledge-Lens](https://github.com/Anurag1/Aurora-The-Conversational-Knowledge-Lens) | Conversational knowledge exploration |
+- Python and applied AI/ML engineering
+- Knowledge graphs and structured reasoning
+- AI agents and orchestration architectures
+- Evaluation harnesses, reproducibility, and falsification
+- Geometry, symbolic representation, and cross-domain discovery
 
-## How I work
+These are areas of active project work, not a claim of expertise in every framework or method.
 
-Contributions are most valuable when they test an idea rather than merely endorse it.
+## What I value
 
-High-value work includes:
-
-- independent replications;
-- stronger baselines;
-- ablation studies;
-- mathematical formalization;
-- counterexamples and falsification tests;
-- benchmark datasets;
-- provenance and evidence improvements;
-- reproducibility fixes;
-- alternative implementations.
-
-A negative result is valuable when it is reproducible.
-
-## Scientific standard
-
-Claims should be separated into:
-
-1. Algorithmic novelty — the system produces a different or useful result.
-2. Knowledge novelty — the result is not already present in the evaluated corpus.
-3. Scientific discovery — the result survives empirical testing and independent replication.
-
-The goal is to make the third claim difficult to earn and therefore meaningful when it is achieved.
+- Runnable examples over unsupported claims.
+- Strong baselines and ablations over impressive-sounding demos.
+- Reproducible negative results as well as positive findings.
+- Clear separation between algorithmic novelty, knowledge novelty, and validated scientific discovery.
+- Documentation that makes it easy for another engineer to reproduce a result.
 
 ## Collaboration
 
-I am interested in rigorous, testable work at the intersection of:
+I welcome technically rigorous collaboration on evaluation, graph reasoning, agent systems, reproducibility, and independent replication. Start with a project's README and open an issue with a concrete question, counterexample, or proposed experiment.
 
-- AI reasoning and planning;
-- knowledge representation and graph reasoning;
-- geometry and symbolic structure;
-- agentic systems and verification;
-- reproducible scientific evaluation.
+**Profile:** [github.com/Anurag1](https://github.com/Anurag1) · **Repositories:** [Browse projects](https://github.com/Anurag1?tab=repositories)
 
-For shared contribution guidelines, see the project [contribution guidelines](https://github.com/Anurag1/.github/blob/main/CONTRIBUTING.md).
+---
+
+<sub>Project descriptions summarize repository documentation; they are not independent verification of all advertised capabilities. Benchmark superiority and scientific discovery should only be claimed after controlled, reproducible evaluation.</sub>
