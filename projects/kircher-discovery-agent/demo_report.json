@@ -1,1 +1,18 @@
-{}
+{
+  "agent": "Kircher Discovery Agent",
+  "version": "0.1.0",
+  "claim_count": 6,
+  "cross_domain_candidates": [
+    {
+      "title": "Graph theory × biology",
+      "status": "candidate; not established",
+      "note": "A structural analogy to investigate, not a verified discovery."
+    },
+    {
+      "title": "Information theory × AI systems",
+      "status": "candidate; not established",
+      "note": "A hypothesis requiring held-out testing against a matched baseline."
+    }
+  ],
+  "warning": "This abbreviated sample is illustrative. The full CLI output includes the graph, detailed candidate rationales, and possible contradictions."
+}
