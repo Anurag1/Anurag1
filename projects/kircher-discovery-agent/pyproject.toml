@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kircher-discovery-agent"
+version = "0.1.0"
+description = "An evidence-aware, cross-domain discovery agent inspired by Athanasius Kircher's combinatorial knowledge tradition."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+kda = "kda.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["kda*"]
