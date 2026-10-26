@@ -1,0 +1,10 @@
+{
+  "claims": [
+    {"id":"G1","subject":"graph motif","predicate":"can represent","object":"repeated relationships","domain":"graph theory","source":"DEMO: illustrative premise, replace with a cited source","conditions":["finite graph"],"status":"unverified"},
+    {"id":"B1","subject":"graph motif","predicate":"can represent","object":"recurring interaction patterns","domain":"biology","source":"DEMO: illustrative premise, replace with a cited source","conditions":["network model"],"status":"unverified"},
+    {"id":"S1","subject":"error correction","predicate":"can reduce","object":"transmission errors","domain":"information theory","source":"DEMO: illustrative premise, replace with a cited source","conditions":["specified channel and code"],"status":"unverified"},
+    {"id":"A1","subject":"error correction","predicate":"can reduce","object":"reasoning errors","domain":"AI systems","source":"DEMO: research hypothesis, not a fact","conditions":["defined task and evaluator"],"status":"unverified"},
+    {"id":"C1","subject":"model X","predicate":"accuracy under test T","object":"0.80","domain":"AI evaluation","source":"DEMO: synthetic measurement","conditions":["dataset T","version 1"],"status":"unverified"},
+    {"id":"C2","subject":"model X","predicate":"accuracy under test T","object":"0.65","domain":"AI evaluation","source":"DEMO: synthetic measurement","conditions":["dataset T","version 1"],"status":"unverified"}
+  ]
+}
