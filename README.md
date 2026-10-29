@@ -45,7 +45,6 @@ Observe → Represent claims and evidence → Map relationships
 I welcome focused collaboration on graph reasoning, agent systems, evaluation design, and independent replication. Please open an issue with a concrete question, counterexample, or proposed experiment in the relevant repository.
 
 - [Browse all repositories](https://github.com/Anurag1?tab=repositories)
-- [Connect on LinkedIn](https://www.linkedin.com/)
 
 ---
 
