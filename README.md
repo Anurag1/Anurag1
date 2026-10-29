@@ -1,53 +1,52 @@
-# Anurag1 — AI/ML Engineering & Research
+# Anurag Dongare — AI Research & Engineering
 
-I build and evaluate experimental systems for **structured reasoning, knowledge-graph discovery, verification, and AI agents**. My portfolio focuses on turning architectural ideas into inspectable implementations and testable research questions.
+I build experimental AI systems for **structured reasoning, knowledge graphs, agent coordination, and scientific discovery**. My focus is turning ambitious ideas into runnable prototypes, falsifiable hypotheses, and reproducible evaluations.
 
-> **Research question:** Can explicit structure—claims, relationships, assumptions, contradictions, and evidence—help AI systems generate better hypotheses and verify them more reliably?
+**Research question:** Can explicit representations of claims, relationships, assumptions, contradictions, and evidence help AI systems form and test better hypotheses?
 
-## Featured work
+## Featured projects
 
-| Project | Focus | Current evidence / status |
+| Project | What it explores | Evidence and next step |
 |---|---|---|
-| [Geometric Engine Intelligence](https://github.com/Anurag1/Geometric-Engine-Intelligence-) | Knowledge-graph representation, unexplored-edge ranking, contradiction-driven discovery | Research prototype with a documented data model, scoring concepts, and evaluation-harness foundation. Claims of knowledge or scientific novelty require independent evaluation. |
-| [HONet](https://github.com/GALAXYUNIONEORGANIZATION/HONET-) | Continual-learning architecture and an executable observation-to-hypothesis discovery loop | Repository documents demos and unit-test commands. Performance claims should be interpreted in light of independently reproduced benchmark results. |
-| [Aurora / VINCI AI](https://github.com/Anurag1/Aurora-The-Conversational-Knowledge-Lens) | Surfacing assumptions, missing context, contradictions, and links across conversations | README describes a deterministic Python prototype, regression tests, CI, and a runnable demo. |
-| [Meta-Attention Reasoning Toolkit](https://github.com/Anurag1/Generalised-Meta-Attention-Architecture-4926c17c) | Experimental meta-attention, confidence estimation, and self-critique | Developer-preview proposal; its README still describes planned SDK components. |
-| [SUPHAI Model](https://github.com/Anurag1/SUPHAI_MODEL) | Multi-agent coordination and adaptive AI system architecture | Architecture-oriented project; benchmark against single-agent and simpler orchestration baselines is a key next step. |
-| [Synthetic Reason — Collective Intelligence](https://github.com/Anurag1/Synthetic-Reason-Collective-Intelligence-System) | Symbolic memory, agent collaboration, and consensus | Repository documents a FastAPI-based prototype and optional external service integrations; deployment and reliability need separate verification. |
+| [Universal Discovery Engine](https://github.com/Anurag1/Universal-Discovery-Engine) | Discovering relationships and candidate explanations, then evaluating them against baselines | Experimental benchmark work. [Review the unseen-functions experiment](https://github.com/Anurag1/Universal-Discovery-Engine/pull/2); it shows both improvements and a known failure case. |
+| [HONet](https://github.com/GALAXYUNIONEORGANIZATION/HONET-) | Continual-learning concepts and an observation-to-hypothesis discovery loop | Research architecture with documented demos and tests; independent benchmark validation remains important. |
+| [Aurora / VINCI AI](https://github.com/Anurag1/Aurora-The-Conversational-Knowledge-Lens) | Surfacing assumptions, missing context, contradictions, and links across conversations | Deterministic Python prototype with documented demo and regression-test workflow. |
+| [Generalised Meta-Attention Architecture](https://github.com/Anurag1/Generalised-Meta-Attention-Architecture-4926c17c) | Meta-attention, confidence estimation, and self-critique | Experimental architecture; distinguish proposed components from implemented and evaluated ones. |
+| [SUPHAI Model](https://github.com/Anurag1/SUPHAI_MODEL) | Multi-agent coordination and adaptive system architecture | Architecture-focused project; compare against simpler single-agent and orchestration baselines. |
+| [Synthetic Reason — Collective Intelligence](https://github.com/Anurag1/Synthetic-Reason-Collective-Intelligence-System) | Symbolic memory, agent collaboration, and consensus | Prototype with documented API and optional integrations; deployment reliability requires separate testing. |
 
-## Research workflow
+## How I approach research
 
 ```text
 Observe → Represent claims and evidence → Map relationships
-       → Detect assumptions and contradictions
-       → Generate hypotheses → Design discriminating tests
-       → Evaluate against baselines → Replicate or revise
+       → Find assumptions and contradictions → Generate hypotheses
+       → Design discriminating tests → Compare with baselines
+       → Publish results, limitations, and reproduction steps
 ```
 
 ## Technical interests
 
-- Python and applied AI/ML engineering
+- Applied AI/ML and Python engineering
 - Knowledge graphs and structured reasoning
-- AI agents and orchestration architectures
-- Evaluation harnesses, reproducibility, and falsification
-- Geometry, symbolic representation, and cross-domain discovery
+- Agent systems and orchestration
+- Evaluation harnesses, ablations, and reproducibility
+- Symbolic representation and cross-domain discovery
 
-These are areas of active project work, not a claim of expertise in every framework or method.
+## Research principles
 
-## What I value
-
-- Runnable examples over unsupported claims.
-- Strong baselines and ablations over impressive-sounding demos.
-- Reproducible negative results as well as positive findings.
-- Clear separation between algorithmic novelty, knowledge novelty, and validated scientific discovery.
-- Documentation that makes it easy for another engineer to reproduce a result.
+- Runnable code over unsupported claims.
+- Strong baselines and ablations over impressive demos.
+- Publish negative results and known failure cases.
+- Separate algorithmic novelty, knowledge novelty, and validated scientific discovery.
+- Make experiments reproducible by other developers.
 
 ## Collaboration
 
-I welcome technically rigorous collaboration on evaluation, graph reasoning, agent systems, reproducibility, and independent replication. Start with a project's README and open an issue with a concrete question, counterexample, or proposed experiment.
+I welcome focused collaboration on graph reasoning, agent systems, evaluation design, and independent replication. Please open an issue with a concrete question, counterexample, or proposed experiment in the relevant repository.
 
-**Profile:** [github.com/Anurag1](https://github.com/Anurag1) · **Repositories:** [Browse projects](https://github.com/Anurag1?tab=repositories)
+- [Browse all repositories](https://github.com/Anurag1?tab=repositories)
+- [Connect on LinkedIn](https://www.linkedin.com/)
 
 ---
 
-<sub>Project descriptions summarize repository documentation; they are not independent verification of all advertised capabilities. Benchmark superiority and scientific discovery should only be claimed after controlled, reproducible evaluation.</sub>
+<sub>Project descriptions summarize repository documentation and are not independent verification of every advertised capability. Performance and scientific-discovery claims should be made only when supported by controlled, reproducible evaluation.</sub>
