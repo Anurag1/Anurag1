@@ -1,26 +1,22 @@
 {
   "title": "Regenerative Memoryless Computing benchmark",
   "method": "raw vs gzip vs deterministic recipe regeneration",
-  "size_mib_requested": 1,
+  "size_mib_requested": 1.0,
   "repeat": 3,
   "results": [
     {
       "workload": "procedural",
       "payload_bytes": 1048576,
       "raw_stored_bytes": 1048576,
-      "gzip_stored_bytes": 109175,
+      "gzip_stored_bytes": 110999,
       "recipe_stored_bytes": 52,
-      "gzip_savings_pct": 89.59,
-      "recipe_savings_pct": 100,
+      "gzip_savings_pct": 89.41,
+      "recipe_savings_pct": 100.0,
       "recipe_reconstruction_exact": true,
-      "median_generation_ms": 90.716,
-      "median_recipe_reconstruction_ms": 68.703,
-      "sha256": "dbcb35ba51d9d6050c237dc43471f64bb364b4e4e8affcecf5639d909ae532d9",
-      "recipe": {
-        "kind": "procedural",
-        "seed": 20261031,
-        "size": 1048576
-      }
+      "median_generation_ms": 43.076,
+      "median_recipe_reconstruction_ms": 45.95,
+      "sha256": "7784829659cca0ab96c31ddc3d1fe1e872269231499d3ae8e264e3188ac34f8d",
+      "recipe": {"kind": "procedural", "seed": 20261031, "size": 1048576}
     },
     {
       "workload": "repetitive",
@@ -29,16 +25,12 @@
       "gzip_stored_bytes": 2608,
       "recipe_stored_bytes": 52,
       "gzip_savings_pct": 99.75,
-      "recipe_savings_pct": 100,
+      "recipe_savings_pct": 100.0,
       "recipe_reconstruction_exact": true,
-      "median_generation_ms": 0.119,
-      "median_recipe_reconstruction_ms": 0.11,
+      "median_generation_ms": 1.107,
+      "median_recipe_reconstruction_ms": 0.166,
       "sha256": "4056b5419f6d4568516883517cea1c7544ed6394d60a4ef21381774a4ce75227",
-      "recipe": {
-        "kind": "repetitive",
-        "seed": 20261031,
-        "size": 1048576
-      }
+      "recipe": {"kind": "repetitive", "seed": 20261031, "size": 1048576}
     },
     {
       "workload": "random",
@@ -47,16 +39,12 @@
       "gzip_stored_bytes": 1048914,
       "recipe_stored_bytes": 48,
       "gzip_savings_pct": -0.03,
-      "recipe_savings_pct": 100,
+      "recipe_savings_pct": 100.0,
       "recipe_reconstruction_exact": true,
-      "median_generation_ms": 4.897,
-      "median_recipe_reconstruction_ms": 2.496,
+      "median_generation_ms": 3.411,
+      "median_recipe_reconstruction_ms": 4.273,
       "sha256": "6981546064a80af4887cc237ab7d09e5c116c2604db423be5ac8de5d4706a7e7",
-      "recipe": {
-        "kind": "random",
-        "seed": 20261031,
-        "size": 1048576
-      }
+      "recipe": {"kind": "random", "seed": 20261031, "size": 1048576}
     }
   ],
   "limitations": [
