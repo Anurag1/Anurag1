@@ -1,0 +1,54 @@
+name: JARVIS CI and Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "jarvis/**"
+      - ".github/workflows/jarvis-pages.yml"
+  pull_request:
+    paths:
+      - "jarvis/**"
+      - ".github/workflows/jarvis-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run static smoke tests
+        working-directory: jarvis
+        run: python -m unittest discover -s tests -v
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload JARVIS static site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: jarvis
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
