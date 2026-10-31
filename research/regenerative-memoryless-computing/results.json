@@ -1,56 +1,9 @@
 {
-  "title": "Regenerative Memoryless Computing benchmark",
-  "method": "raw vs gzip vs deterministic recipe regeneration",
-  "size_mib_requested": 1.0,
-  "repeat": 3,
-  "results": [
-    {
-      "workload": "procedural",
-      "payload_bytes": 1048576,
-      "raw_stored_bytes": 1048576,
-      "gzip_stored_bytes": 110999,
-      "recipe_stored_bytes": 52,
-      "gzip_savings_pct": 89.41,
-      "recipe_savings_pct": 100.0,
-      "recipe_reconstruction_exact": true,
-      "median_generation_ms": 43.076,
-      "median_recipe_reconstruction_ms": 45.95,
-      "sha256": "7784829659cca0ab96c31ddc3d1fe1e872269231499d3ae8e264e3188ac34f8d",
-      "recipe": {"kind": "procedural", "seed": 20261031, "size": 1048576}
-    },
-    {
-      "workload": "repetitive",
-      "payload_bytes": 1048576,
-      "raw_stored_bytes": 1048576,
-      "gzip_stored_bytes": 2608,
-      "recipe_stored_bytes": 52,
-      "gzip_savings_pct": 99.75,
-      "recipe_savings_pct": 100.0,
-      "recipe_reconstruction_exact": true,
-      "median_generation_ms": 1.107,
-      "median_recipe_reconstruction_ms": 0.166,
-      "sha256": "4056b5419f6d4568516883517cea1c7544ed6394d60a4ef21381774a4ce75227",
-      "recipe": {"kind": "repetitive", "seed": 20261031, "size": 1048576}
-    },
-    {
-      "workload": "random",
-      "payload_bytes": 1048576,
-      "raw_stored_bytes": 1048576,
-      "gzip_stored_bytes": 1048914,
-      "recipe_stored_bytes": 48,
-      "gzip_savings_pct": -0.03,
-      "recipe_savings_pct": 100.0,
-      "recipe_reconstruction_exact": true,
-      "median_generation_ms": 3.411,
-      "median_recipe_reconstruction_ms": 4.273,
-      "sha256": "6981546064a80af4887cc237ab7d09e5c116c2604db423be5ac8de5d4706a7e7",
-      "recipe": {"kind": "random", "seed": 20261031, "size": 1048576}
-    }
-  ],
-  "limitations": [
-    "Synthetic workloads only; not a general storage-elimination result.",
-    "Recipe size excludes the code/runtime required to interpret the recipe.",
-    "Random workload is reproducible because its PRNG seed is known.",
-    "Arbitrary unknown information cannot be reconstructed without preserving sufficient information or obtaining it elsewhere."
-  ]
+  "title": "RMC benchmark results status",
+  "status": "The earlier recipe-only results are superseded and must not be used to claim a storage advantage.",
+  "reason": "Those figures excluded the generator source, Python executable, and standard-library footprint, so they were not a fair comparison against gzip.",
+  "authoritative_results": "Run the GitHub Actions workflow and download the rmc-benchmark-python-3.11 or rmc-benchmark-python-3.12 artifact. The generated results.json contains the full deployment footprint, reconstruction checks, and amortized per-artifact break-even scenarios.",
+  "workflow": "https://github.com/Anurag1/Anurag1/blob/main/.github/workflows/rmc-benchmark.yml",
+  "benchmark_source": "https://github.com/Anurag1/Anurag1/blob/main/research/regenerative-memoryless-computing/rmc_benchmark.py",
+  "note": "No full-cost result is claimed in this file until produced by the updated benchmark."
 }
