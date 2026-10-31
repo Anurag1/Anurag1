@@ -8,6 +8,7 @@ I build and evaluate experimental systems for **structured reasoning, knowledge-
 
 | Project | Focus | Current evidence / status |
 |---|---|---|
+| [Regenerative Memoryless Computing (RMC)](https://github.com/Anurag1/Anurag1/tree/main/research/regenerative-memoryless-computing) | Test when generated data can be recreated from compact recipes instead of persisted in full | Reproducible synthetic benchmark and 4 unit tests; results are preliminary and exclude generator/runtime storage costs. |
 | [Geometric Engine Intelligence](https://github.com/Anurag1/Geometric-Engine-Intelligence-) | Knowledge-graph representation, unexplored-edge ranking, contradiction-driven discovery | Research prototype with a documented data model, scoring concepts, and evaluation-harness foundation. Claims of knowledge or scientific novelty require independent evaluation. |
 | [HONet](https://github.com/GALAXYUNIONEORGANIZATION/HONET-) | Continual-learning architecture and an executable observation-to-hypothesis discovery loop | Repository documents demos and unit-test commands. Performance claims should be interpreted in light of independently reproduced benchmark results. |
 | [Aurora / VINCI AI](https://github.com/Anurag1/Aurora-The-Conversational-Knowledge-Lens) | Surfacing assumptions, missing context, contradictions, and links across conversations | README describes a deterministic Python prototype, regression tests, CI, and a runnable demo. |
