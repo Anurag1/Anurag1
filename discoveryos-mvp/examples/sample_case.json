@@ -1,0 +1,26 @@
+{
+  "case_id": "renewable-storage-smoke-test",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Battery storage improves grid reliability during variable renewable generation.",
+      "source": "sample-source-A",
+      "confidence": 0.72,
+      "tags": ["energy", "grid"]
+    },
+    {
+      "id": "c2",
+      "text": "Battery storage does not improve grid reliability during variable renewable generation.",
+      "source": "sample-source-B",
+      "confidence": 0.42,
+      "tags": ["energy", "grid"]
+    },
+    {
+      "id": "c3",
+      "text": "Storage benefits depend on duration, location, and dispatch strategy.",
+      "source": "sample-source-C",
+      "confidence": 0.55,
+      "tags": ["energy", "conditions"]
+    }
+  ]
+}
