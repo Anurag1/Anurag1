@@ -11,18 +11,27 @@ on:
       - ".github/workflows/discoveryos-mvp.yml"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: discoveryos-mvp
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Verify Python
+        run: python --version
       - name: Run unit tests
+        working-directory: discoveryos-mvp
         run: python -m unittest discover -s tests -v
-      - name: Run smoke analysis
+      - name: Run analysis smoke test
+        working-directory: discoveryos-mvp
         run: python -m discoveryos.cli examples/sample_case.json --out /tmp/discoveryos-report.json
+      - name: Run benchmark smoke test
+        working-directory: discoveryos-mvp
+        run: python -m discoveryos.benchmark_cli examples/benchmark_cases.json --out /tmp/discoveryos-benchmark.json
+      - name: Validate benchmark output
+        run: python -c "import json; d=json.load(open('/tmp/discoveryos-benchmark.json')); assert d['case_count'] == 2; print(json.dumps(d['aggregate'], indent=2))"
