@@ -2,14 +2,15 @@
 
 A small, runnable Python prototype of the DiscoveryOS idea. It is intentionally an **MVP**, not a claim of general intelligence or superiority over modern models.
 
-## What works today
+## Current capabilities
 
 - Records claims with source, confidence, and tags.
 - Builds a lightweight concept/evidence graph (standard library only).
 - Flags *candidate* contradictions using explicit polarity markers and shared concepts.
 - Generates follow-up questions for unsupported or conflicting claims.
-- Produces a deterministic JSON report that can be inspected and benchmarked.
-- Runs unit tests in GitHub Actions.
+- Normalizes explicit JSON exports from research components through adapter contracts.
+- Produces deterministic JSON analysis and benchmark reports.
+- Includes unit tests and a GitHub Actions workflow.
 
 ## Quick start
 
@@ -18,35 +19,36 @@ Requires Python 3.11+; no third-party dependencies.
 ```bash
 cd discoveryos-mvp
 python -m unittest discover -s tests -v
-python -m discoveryos examples/sample_case.json --out report.json
+python -m discoveryos.cli examples/sample_case.json --out report.json
+python -m discoveryos.benchmark_cli examples/benchmark_cases.json --out benchmark-report.json
 ```
-
-## Input format
-
-See `examples/sample_case.json`. Each claim has `id`, `text`, `source`, optional `confidence` (0–1), and optional `tags`.
 
 ## Architecture
 
 ```text
-Claims + sources
-      ↓
+HONet / Meta-Attention / SUPHAI / Prometheus
+         ↓ component-owned JSON exports
+     Adapter contracts + provenance
+         ↓
 Evidence ledger → concept graph
-      ↓                 ↓
+         ↓                 ↓
 support checks → candidate contradiction checks
-      ↓                 ↓
+         ↓                 ↓
 follow-up questions + hypotheses to test
-      ↓
-reproducible JSON report
+         ↓
+reproducible JSON reports + benchmark output
 ```
+
+## Benchmark scope
+
+The included baseline is deliberately minimal and only measures pipeline behavior. It is useful for smoke testing, not evidence of superiority over an LLM or multi-agent system. A fair model comparison needs the same labelled tasks, inputs, tools, and budgets for every baseline.
 
 ## Important limitations
 
 - Contradiction detection is a transparent lexical heuristic, not semantic entailment.
 - Generated hypotheses/questions are prompts for human review, not verified findings.
+- The adapter registry defines integration contracts; it does not itself execute HONet, Meta-Attention, SUPHAI, or Prometheus.
 - No LLM API, web crawler, or external tool execution is included.
-- The included example is a smoke-test fixture, not scientific evidence.
-- This repository does not prove DiscoveryOS outperforms a baseline. That requires a controlled, reproducible head-to-head evaluation on identical tasks and budgets.
+- The included cases are smoke-test fixtures, not scientific evidence.
 
-## Next milestone
-
-Add a benchmark adapter for single-agent and multi-agent baselines, a labelled evaluation set, and metrics for evidence attribution, contradiction precision/recall, task success, latency, and cost.
+See [INTEGRATION_STATUS.md](INTEGRATION_STATUS.md) for component-by-component integration status.
