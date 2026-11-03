@@ -1,0 +1,16 @@
+[
+  {
+    "case_id": "battery-storage-conflict",
+    "claims": [
+      {"id": "b1", "text": "Battery storage improves grid reliability", "source": "source-A", "confidence": 0.75, "tags": ["energy"]},
+      {"id": "b2", "text": "Battery storage does not improve grid reliability", "source": "source-B", "confidence": 0.45, "tags": ["energy"]}
+    ]
+  },
+  {
+    "case_id": "independent-claims",
+    "claims": [
+      {"id": "i1", "text": "Urban trees reduce surface temperatures", "source": "source-C", "confidence": 0.8},
+      {"id": "i2", "text": "Transit frequency affects commuter wait time", "source": "source-D", "confidence": 0.7}
+    ]
+  }
+]
