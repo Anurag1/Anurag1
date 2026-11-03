@@ -1,0 +1,28 @@
+name: DiscoveryOS MVP
+
+on:
+  push:
+    paths:
+      - "discoveryos-mvp/**"
+      - ".github/workflows/discoveryos-mvp.yml"
+  pull_request:
+    paths:
+      - "discoveryos-mvp/**"
+      - ".github/workflows/discoveryos-mvp.yml"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: discoveryos-mvp
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Run smoke analysis
+        run: python -m discoveryos.cli examples/sample_case.json --out /tmp/discoveryos-report.json
